@@ -1,4 +1,5 @@
 /* import css styles */
+import './css/NavbarListItem.css';
 
 const NavbarListItem = () => {
     return (

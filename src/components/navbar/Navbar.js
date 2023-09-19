@@ -2,6 +2,7 @@
 import NavbarList from './navbar-list/NavbarList';
 
 /* import css styles */
+import './Navbar.css';
 
 const Navbar = () => {
     return (
@@ -9,7 +10,9 @@ const Navbar = () => {
             <div className="container">
                 <div className="nav-inner">
                     <div className="logo">
-                        <a href="#">Portfolio</a>
+                        <a className="logo-link" href="#">
+                            Portfolio
+                        </a>
                     </div>
                     <NavbarList />
                 </div>
