@@ -13,21 +13,11 @@ const NavbarList = () => {
         },
         {
             id: 1,
-            title: 'About',
-            link: '#!'
-        },
-        {
-            id: 2,
-            title: 'Skills',
-            link: '#!'
-        },
-        {
-            id: 3,
             title: 'Portfolio',
             link: '#!'
         },
         {
-            id: 4,
+            id: 2,
             title: 'Contact',
             link: '#!'
         }
