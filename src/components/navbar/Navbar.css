@@ -1,12 +1,27 @@
+.nav,
+.nav-inner {
+    display: flex;
+}
+
 .nav {
     width: 100%;
     height: 12vh;
+    flex-direction: column;
+    justify-content: center;
 }
 .nav-inner {
-    display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-.logo {
+
+.logo-list {
+    display: flex;
+    font-size: 20px;
+    font-family: 'Poppins-SemiBold';
+    letter-spacing: 0.5rem;
+    color: #bf2233;
 }
-.logo-link {
+
+.logo-list :nth-child(1) {
+    text-transform: uppercase;
 }

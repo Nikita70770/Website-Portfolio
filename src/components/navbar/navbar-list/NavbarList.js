@@ -13,7 +13,7 @@ const NavbarList = () => {
         },
         {
             id: 1,
-            title: 'Portfolio',
+            title: 'Projects',
             link: '#!'
         },
         {

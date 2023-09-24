@@ -11,7 +11,17 @@ const Navbar = () => {
                 <div className="nav-inner">
                     <div className="logo">
                         <a className="logo-link" href="#!">
-                            Portfolio
+                            <ul className="logo-list">
+                                <li className="logo-list-item">
+                                    <span>{'</'}</span>
+                                </li>
+                                <li className="logo-list-item">
+                                    <p>portfolio</p>
+                                </li>
+                                <li className="logo-list-item">
+                                    <span>{'>'}</span>
+                                </li>
+                            </ul>
                         </a>
                     </div>
                     <NavbarList />
