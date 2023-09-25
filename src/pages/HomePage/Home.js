@@ -1,6 +1,7 @@
 /* import Components */
 
 /* import css styles */
+import './Home.css';
 
 const Home = () => {
     return (
