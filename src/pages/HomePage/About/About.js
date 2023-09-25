@@ -1,4 +1,5 @@
 /* import Components */
+import MainSkills from './Skills/MainSkills';
 
 /* import css styles */
 import './About.css';
@@ -26,8 +27,8 @@ const About = () => {
                                 est!
                             </p>
                         </div>
-                        <div className="about-details">
-                            <ul className="about-details-list">
+                        <div className="about-buttons-list">
+                            <ul className="about-list">
                                 <li className="about-list-item">
                                     <button className="btn-main-skills active">Main skills</button>
                                 </li>
@@ -38,6 +39,9 @@ const About = () => {
                                     <button className="btn-lorem">Lorem</button>
                                 </li>
                             </ul>
+                        </div>
+                        <div className="about-details-content">
+                            <MainSkills />
                         </div>
                     </div>
                 </div>

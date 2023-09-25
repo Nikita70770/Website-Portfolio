@@ -56,24 +56,24 @@
     color: #82898f;
 }
 
-.about-details-list,
-.about-details-list li button {
+.about-list,
+.about-list li button {
     border-radius: 3rem;
 }
 
-.about-details-list {
+.about-list {
     display: flex;
     justify-content: space-between;
     border: 1px solid #bf2233;
 }
 
-.about-details-list li button {
+.about-list li button {
     padding: 1rem 2rem;
     cursor: pointer;
     letter-spacing: 0.1rem;
     color: #c7d0cc;
 }
 
-.about-details-list li button.active {
+.about-list li button.active {
     background-color: #bf2233;
 }
