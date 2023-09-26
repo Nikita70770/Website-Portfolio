@@ -2,6 +2,7 @@
 import SkillItem from './SkillItem';
 
 /* import css styles */
+import './css/MainSkills.css';
 
 const MainSkills = () => {
     const skillsData = [
@@ -9,39 +10,42 @@ const MainSkills = () => {
             id: 0,
             title: 'Lorem',
             level: 'Begin',
-            isActive: false
+            isActive: ''
         },
         {
             id: 1,
             title: 'Lorem',
             level: 'Basic',
-            isActive: false
+            isActive: ''
         },
         {
             id: 2,
             title: 'Lorem',
             level: 'Medium',
-            isActive: false
+            isActive: 'active'
         },
         {
             id: 3,
             title: 'Lorem',
             level: 'Upper',
-            isActive: false
+            isActive: ''
         },
         {
             id: 4,
             title: 'Lorem',
             level: 'Advance',
-            isActive: false
+            isActive: ''
         }
     ];
     return (
-        <ul className="about-list-skills">
-            {skillsData.map(({ id, title, level, isActive }) => {
-                return <SkillItem key={id} title={title} level={level} isActive={isActive} />;
-            })}
-        </ul>
+        <>
+            <h2 className="competency">HTML</h2>
+            <ul className="about-list-skills">
+                {skillsData.map(({ id, title, level, isActive }) => {
+                    return <SkillItem key={id} title={title} level={level} isActive={isActive} />;
+                })}
+            </ul>
+        </>
     );
 };
 
