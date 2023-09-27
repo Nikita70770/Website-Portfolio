@@ -44,7 +44,7 @@ const About = () => {
                         </div>
                         <div className="about-details-content">
                             <MainSkills />
-                            {/* <Education /> */}
+                            <Education />
                             {/* <Expereince /> */}
                         </div>
                     </div>

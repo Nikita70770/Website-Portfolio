@@ -38,7 +38,7 @@ const MainSkills = () => {
         }
     ];
     return (
-        <div className="main-skills">
+        <div className="skills-content">
             <h2 className="competency">Skills</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita natus ipsa repellat deleniti facere

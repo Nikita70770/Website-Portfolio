@@ -1,3 +1,8 @@
+/* import Components */
+
+/* import css styles */
+import './css/Education.css';
+
 const Education = () => {
     return (
         <div className="education-content">

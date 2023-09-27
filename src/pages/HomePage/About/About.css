@@ -16,6 +16,7 @@
 .about-block-right {
     max-width: 50%;
     width: 100%;
+    height: 100%;
 }
 
 .about-image {
@@ -37,6 +38,7 @@
 .about-block-right-inner {
     max-width: 90%;
     width: 100%;
+    height: 100%;
     margin: 0 auto;
 }
 
@@ -76,4 +78,10 @@
 
 .about-list li button.active {
     background-color: #bf2233;
+}
+
+.about-details-content {
+    width: 100%;
+    height: 50%;
+    position: relative;
 }
