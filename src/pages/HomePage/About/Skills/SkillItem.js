@@ -3,10 +3,10 @@
 /* import css styles */
 import './css/SkillItem.css';
 
-const SkillItem = ({ title, level, isActive }) => {
+const SkillItem = ({ level, statusActive, statusComplete }) => {
     return (
-        <li className="item-skill">
-            <span className={'level-skill' + isActive}>{level}</span>
+        <li className={'item-skill' + ' ' + statusActive + statusComplete}>
+            <span className={'level-skill' + ' ' + statusActive}>{level}</span>
         </li>
     );
 };

@@ -8,44 +8,48 @@ const MainSkills = () => {
     const skillsData = [
         {
             id: 0,
-            title: 'Lorem',
             level: 'Begin',
-            isActive: ''
+            valActive: '',
+            valComplete: 'complete'
         },
         {
             id: 1,
-            title: 'Lorem',
             level: 'Basic',
-            isActive: ''
+            valActive: '',
+            valComplete: 'complete'
         },
         {
             id: 2,
-            title: 'Lorem',
             level: 'Medium',
-            isActive: 'active'
+            valActive: 'active',
+            valComplete: ''
         },
         {
             id: 3,
-            title: 'Lorem',
             level: 'Upper',
-            isActive: ''
+            valActive: '',
+            valComplete: ''
         },
         {
             id: 4,
-            title: 'Lorem',
             level: 'Advance',
-            isActive: ''
+            valActive: '',
+            valComplete: ''
         }
     ];
     return (
-        <>
-            <h2 className="competency">HTML</h2>
-            <ul className="about-list-skills">
-                {skillsData.map(({ id, title, level, isActive }) => {
-                    return <SkillItem key={id} title={title} level={level} isActive={isActive} />;
+        <div className="main-skills">
+            <h2 className="competency">Skills</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita natus ipsa repellat deleniti facere
+                nulla explicabo illo nihil consequuntur saepe. Fuga id esse illum nam?
+            </p>
+            {/* <ul className="about-list-skills">
+                {skillsData.map(({ id, level, valActive, valComplete }) => {
+                    return <SkillItem key={id} level={level} statusActive={valActive} statusComplete={valComplete} />;
                 })}
-            </ul>
-        </>
+            </ul> */}
+        </div>
     );
 };
 

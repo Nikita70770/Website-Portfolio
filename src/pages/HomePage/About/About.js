@@ -1,5 +1,6 @@
 /* import Components */
 import MainSkills from './Skills/MainSkills';
+import Education from './Education/Education';
 
 /* import css styles */
 import './About.css';
@@ -41,7 +42,8 @@ const About = () => {
                             </ul>
                         </div>
                         <div className="about-details-content">
-                            <MainSkills />
+                            {/* <MainSkills /> */}
+                            <Education />
                         </div>
                     </div>
                 </div>
