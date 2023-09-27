@@ -1,6 +1,7 @@
 /* import Components */
 import MainSkills from './Skills/MainSkills';
 import Education from './Education/Education';
+import Expereince from './Experience/Expereince';
 
 /* import css styles */
 import './About.css';
@@ -37,13 +38,14 @@ const About = () => {
                                     <button className="btn-education">Education</button>
                                 </li>
                                 <li className="about-list-item">
-                                    <button className="btn-lorem">Lorem</button>
+                                    <button className="btn-expereince">Expereince</button>
                                 </li>
                             </ul>
                         </div>
                         <div className="about-details-content">
-                            {/* <MainSkills /> */}
-                            <Education />
+                            <MainSkills />
+                            {/* <Education /> */}
+                            {/* <Expereince /> */}
                         </div>
                     </div>
                 </div>
