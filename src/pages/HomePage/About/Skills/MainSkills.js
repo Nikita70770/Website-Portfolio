@@ -4,7 +4,7 @@ import SkillItem from './SkillItem';
 /* import css styles */
 import './css/MainSkills.css';
 
-const MainSkills = () => {
+const MainSkills = props => {
     const skillsData = [
         {
             id: 0,
@@ -37,18 +37,15 @@ const MainSkills = () => {
             valComplete: ''
         }
     ];
+    const { activityStatus } = props;
+    const classTitle = activityStatus === true ? ' active' : '';
     return (
-        <div className="skills-content">
+        <div className={'skills-content' + classTitle}>
             <h2 className="competency">Skills</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita natus ipsa repellat deleniti facere
                 nulla explicabo illo nihil consequuntur saepe. Fuga id esse illum nam?
             </p>
-            {/* <ul className="about-list-skills">
-                {skillsData.map(({ id, level, valActive, valComplete }) => {
-                    return <SkillItem key={id} level={level} statusActive={valActive} statusComplete={valComplete} />;
-                })}
-            </ul> */}
         </div>
     );
 };

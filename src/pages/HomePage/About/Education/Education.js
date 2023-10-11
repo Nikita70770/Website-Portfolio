@@ -3,9 +3,11 @@
 /* import css styles */
 import './css/Education.css';
 
-const Education = () => {
+const Education = props => {
+    const { activityStatus } = props;
+    const classTitle = activityStatus === true ? ' active' : '';
     return (
-        <div className="education-content">
+        <div className={'education-content' + classTitle}>
             <h2>Education</h2>
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt consectetur, molestias magni non vero

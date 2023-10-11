@@ -1,10 +1,10 @@
-.skills-content {
+.experience-content {
     position: absolute;
     top: 0;
     left: 0;
     content-visibility: hidden;
 }
 
-.skills-content.active {
+.experience-content.active {
     content-visibility: visible;
 }
