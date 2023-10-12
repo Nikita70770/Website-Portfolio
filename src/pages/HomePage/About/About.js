@@ -14,6 +14,7 @@ import ImageProfile from '../../../assets/img/about/img-profile.jpg';
 class About extends Component {
     constructor() {
         super();
+        this.switchPosition = 1;
         this.state = {
             skillsTab: true,
             educationTab: false,
@@ -22,6 +23,7 @@ class About extends Component {
     }
 
     clickMainSkills = () => {
+        this.switchPosition = 1;
         this.resetState();
         this.setState(prevState => ({
             skillsTab: !prevState.skillsTab
@@ -29,6 +31,7 @@ class About extends Component {
     };
 
     clickEducation = () => {
+        this.switchPosition = 2;
         this.resetState();
         this.setState(prevState => ({
             educationTab: !prevState.educationTab
@@ -36,6 +39,7 @@ class About extends Component {
     };
 
     clickExperience = () => {
+        this.switchPosition = 3;
         this.resetState();
         this.setState(prevState => ({
             experienceTab: !prevState.experienceTab
@@ -71,6 +75,7 @@ class About extends Component {
                                 </p>
                             </div>
                             <div className="about-buttons-list">
+                                <span className={'switch-elem' + ` move-in-pos${this.switchPosition}`}></span>
                                 <ul className="about-list">
                                     <li className="about-list-item">
                                         <button

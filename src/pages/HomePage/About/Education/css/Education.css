@@ -1,3 +1,8 @@
+.switch-elem.move-in-pos2 {
+    left: 48%;
+    transform: translateX(-48%);
+}
+
 .education-content {
     position: absolute;
     top: 0;

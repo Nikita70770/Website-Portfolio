@@ -1,0 +1,40 @@
+.item-skill {
+    position: relative;
+}
+
+.skills-details {
+    margin-bottom: 0.5rem;
+}
+
+.sub-list-skill {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-status-bar {
+    width: 100%;
+    padding: 0.2rem 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 3rem;
+    background-color: #1e213d;
+    z-index: -1;
+}
+
+.skill-item {
+    position: relative;
+    padding: 0.2rem 3rem;
+    border-radius: 3rem;
+}
+
+.skill-item.active {
+    background-color: rgba(191, 34, 51, 0.8);
+}
+
+.skill-item.active span {
+    position: absolute;
+    top: 1rem;
+    right: -1.5rem;
+    font-size: 14px;
+}

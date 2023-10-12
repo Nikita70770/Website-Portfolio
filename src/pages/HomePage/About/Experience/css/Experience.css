@@ -1,3 +1,8 @@
+.switch-elem.move-in-pos3 {
+    left: 100%;
+    transform: translateX(-100%);
+}
+
 .experience-content {
     position: absolute;
     top: 0;
