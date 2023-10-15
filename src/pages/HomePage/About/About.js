@@ -111,8 +111,8 @@ class About extends Component {
                             </div>
                             <div className="about-details-content">
                                 <MainSkills activityStatus={this.state.skillsTab} />
-                                <Education activityStatus={this.state.educationTab} />
-                                <Expereince activityStatus={this.state.experienceTab} />
+                                {/* <Education activityStatus={this.state.educationTab} />
+                                <Expereince activityStatus={this.state.experienceTab} /> */}
                             </div>
                         </div>
                     </div>

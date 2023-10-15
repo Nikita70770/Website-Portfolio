@@ -8,12 +8,24 @@ const Education = props => {
     const classTitle = activityStatus === true ? ' active' : '';
     return (
         <div className={'education-content' + classTitle}>
-            <h2>Education</h2>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt consectetur, molestias magni non vero
-                commodi provident ex! Magnam molestias, dolorum est architecto non id excepturi necessitatibus animi
-                atque nam voluptatem.
-            </p>
+            <ul className="education-list">
+                <li key={0} className="education-item">
+                    <h2>Lorem</h2>
+                    <h3>Lorem</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, obcaecati! Inventore porro ut
+                        eaque aut dolorum consequuntur eum laboriosam iste?
+                    </p>
+                </li>
+                <li key={1} className="education-item">
+                    <h2>Lorem</h2>
+                    <h3>Lorem</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, obcaecati! Inventore porro ut
+                        eaque aut dolorum consequuntur eum laboriosam iste?
+                    </p>
+                </li>
+            </ul>
         </div>
     );
 };

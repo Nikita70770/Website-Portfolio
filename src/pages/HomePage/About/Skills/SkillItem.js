@@ -1,21 +1,15 @@
-/* import Components */
+import uuid from 'react-uuid';
 
 /* import css styles */
 import './css/SkillItem.css';
 
-const getRandomId = () => {
-    const min = 0,
-        max = 10000;
-    return Math.floor(Math.random() * (max - min) + min).toString();
-};
-
-const createItem = (id, level, valueLvl, maxLvl) => {
-    const elemsSubList = new Array(maxLvl);
-    for (let i = 0; i < maxLvl; i++) {
-        let elem = <li key={id} className={'skill-item' + (i + 1 <= valueLvl ? ' active' : '')}></li>;
+const createItem = (level, valueLvl, maxLvl) => {
+    const elemsSubList = new Array(valueLvl);
+    for (let i = 0; i < valueLvl; i++) {
+        let elem = <li key={uuid()} className={'skill-item' + ' active'}></li>;
         if (i + 1 === valueLvl) {
             elem = (
-                <li key={id} className={'skill-item' + (i + 1 <= valueLvl ? ' active' : '')}>
+                <li key={uuid()} className={'skill-item' + ' active'}>
                     <span>{level}</span>
                 </li>
             );
@@ -26,7 +20,6 @@ const createItem = (id, level, valueLvl, maxLvl) => {
 };
 
 const SkillItem = props => {
-    const idElem = getRandomId();
     const { skill, level, valueLvl, maxLvl } = props.data;
     return (
         <li className="item-skill">
@@ -34,7 +27,7 @@ const SkillItem = props => {
                 <span>{skill}</span>
             </div>
             <div className="skill-status-bar"></div>
-            <ul className="sub-list-skill">{createItem(idElem, level, valueLvl, maxLvl)}</ul>
+            <ul className="sub-list-skill">{createItem(level, valueLvl, maxLvl)}</ul>
         </li>
     );
 };
